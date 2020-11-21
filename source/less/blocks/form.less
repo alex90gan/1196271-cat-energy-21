@@ -1,0 +1,91 @@
+.form {
+    width: 100%;
+    .indents(@margin: 0; @padding: 0 20px);
+}
+
+.form__fieldset {
+    .indents(@margin: 0 0 27px 0; @padding: 0);
+    border: none;
+}
+ .form__legend {
+    .font-size(@size: 24px; @weight: 400);
+    .indents(@margin: 0 0 34px 0; @padding: 0);
+    line-height: 26px;
+    color: @basic_black;
+ }
+
+.form__list {
+    .reset-list();
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px;
+    &--filter {
+        margin-bottom: 12px;
+    }
+    &--checkbox {
+        margin-bottom: 12px;
+    }
+}
+
+.form__label {
+    &--filter {
+        padding-left: 15px;
+    }
+    &--checkbox {
+        padding-left: 18px;
+    }
+    .font-size(@size: 16px; @weight: 400);
+    text-transform: uppercase;
+    color: @special_dark-grey;
+    .indents(@margin: 0; @padding: 0);
+    padding-right: 5px;
+}
+
+.form__input {
+    .indents(@margin: 0; @padding: 14px 18px);
+    .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+    .font-size(@size: 16px; @weight: 400);
+    border: 1px solid @basic_grey-3;
+    text-transform: uppercase;
+    color: @special_dark-grey;
+    flex-grow: 1;
+    &--filter {
+        flex-grow: 0;
+        .indents(@margin: 0; @padding: 6px 0);
+    }
+    &--checkbox {
+        flex-grow: 0;
+        .indents(@margin: 0; @padding: 6px 0);
+    }
+    &--textarea {
+        width: 100%;
+        resize: none;
+    }
+}
+
+.form__button {
+    .indents(@margin: 0 0 21px 0; @padding: 10px 0);
+}
+
+.form__text {
+    display: flex;
+    justify-content: center;
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    .indents(@margin: 0; @padding: 0);
+}
+
+.form__input::-webkit-input-placeholder { color: @special_dark-grey; }
+.form__input::-ms-input-placeholder { color: @special_dark-grey; }
+.form__input::-ms-input-placeholder { color: @special_dark-grey; }
+.form__input::placeholder { color: @special_dark-grey; }
+
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {}

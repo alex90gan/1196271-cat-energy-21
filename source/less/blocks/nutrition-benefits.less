@@ -1,0 +1,176 @@
+.nutrition-benefits {
+    width: 100%;
+    .indents(@margin: 0 auto; @padding: 0 20px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: @tablet-width) {
+        .indents(@margin: 0 auto; @padding: 0 30px);
+    }
+}
+
+.nutrition-benefits__title {
+    .font-size(@size: 36px; @weight: 400);
+    margin-bottom: 38px;
+}
+
+.nutrition-benefits__list {
+    .reset-list();
+    @media (min-width: @tablet-width) {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+
+.nutrition-benefits__item {
+    margin-bottom: 20px;
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: start;
+        width: 247px;
+        min-height: 280px;
+    }
+}
+
+.nutrition-benefits__item--one {
+    position: relative;
+    padding-right: 29px;
+    @media (min-width: @tablet-width) {
+        margin-right: 137px;
+        &::after {
+            content: "1";
+            position: absolute;
+            top: 125px;
+            right: 13px;
+            .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+            .font-size(@size: 280px; @weight: 400);
+            color: @basic_grey;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: @basic_green url(../img/advantage-leaf@1x.png) no-repeat top left;
+        @media (min-width: @tablet-width) {
+        top: 35px;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        }
+    }
+}
+
+.nutrition-benefits__item--two {
+    position: relative;
+    padding-right: 19px;
+    @media (min-width: @tablet-width) {
+        &::after {
+            content: "2";
+            position: absolute;
+            top: 125px;
+            right: 13px;
+            .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+            .font-size(@size: 280px; @weight: 400);
+            color: @basic_grey;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: @basic_green url(../img/advantage-powder@1x.png) no-repeat top left;
+        @media (min-width: @tablet-width) {
+            top: 35px;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            }
+    }
+}
+
+.nutrition-benefits__item--three {
+    position: relative;
+    padding-right: 38px;
+    @media (min-width: @tablet-width) {
+        margin-right: 137px;
+        &::after {
+            content: "3";
+            position: absolute;
+            top: 125px;
+            right: 13px;
+            .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+            .font-size(@size: 280px; @weight: 400);
+            color: @basic_grey;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: @basic_green url(../img/advantage-dining@1x.png) no-repeat top left;
+        @media (min-width: @tablet-width) {
+            top: 35px;
+            left: 0;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.nutrition-benefits__item--four {
+    position: relative;
+    @media (min-width: @tablet-width) {
+        &::after {
+            content: "4";
+            position: absolute;
+            top: 125px;
+            right: 13px;
+            .font-oswald(@family:"Oswald", "Arial", sans-serif; @style: normal);
+            .font-size(@size: 280px; @weight: 400);
+            color: @basic_grey;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: @basic_green url(../img/advantage-clock@1x.png) no-repeat top left;
+        @media (min-width: @tablet-width) {
+            top: 35px;
+            left: 0;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.nutrition-benefits__text {
+    display: block;
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    .indents(@margin: 0 0 0 80px; @padding: 0);
+    color: @special_dark-grey;
+    @media (min-width: @tablet-width) {
+        z-index: 2;
+        .indents(@margin: 0 0 57px 0; @padding: 0);
+    }
+}
+
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {}
