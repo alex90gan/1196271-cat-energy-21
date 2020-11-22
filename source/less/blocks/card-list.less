@@ -1,0 +1,92 @@
+.card-list {
+    width: 100%;
+    .indents(@margin: 0 auto; @padding: 0 20px);
+}
+
+.card-list__list {
+    .reset-list();
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 20px;
+}
+
+.card-list__item {
+    .indents(@margin: 0; @padding: 0);
+}
+
+.card-list__container {
+    width: 100%;
+    .indents(@margin: 0 auto; @padding: 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-list__img {
+    display: block;
+}
+
+.card-list__title {
+    .font-size(@size: 16px; @weight: 400);
+    line-height: 20px;
+    color: @special_dark-grey-2;
+    .indents(@margin: 0; @padding: 0);
+    margin-right: 66px;
+    margin-bottom: 18px;
+    &--more-products {
+        .font-size(@size: 16px; @weight: 400);
+        .indents(@margin: 0 auto; @padding: 0);
+        margin-bottom: 8px;
+        color: @basic_black-2;
+        text-transform: uppercase;
+    }
+}
+
+.card-list__link {
+    &--title {
+        .reset-link(@text-transform: uppercase; @text-decoration: none; @color: @special_dark-grey-2);
+    }
+}
+
+.card-list__text-block {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 22px;
+}
+
+.card-list__text {
+    .font-size(@size: 12px; @weight: 400);
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    .indents(@margin: 0 auto; @padding: 0);
+    margin-bottom: 21px;
+    color: @special_dark-grey;
+}
+
+.card-list__product-description {
+    .indents(@margin: 0; @padding: 0);
+    display: flex;
+    flex-direction: column;
+    .font-oswald(@family: "Arial", "Helvetica", sans-serif; @style: normal);
+    color: @special_dark-grey;
+}
+
+.card-list__product-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.card-list__product-parameter {
+    .indents(@margin: 0; @padding: 0);
+}
+
+.card-list__product-value {
+    .indents(@margin: 0; @padding: 0);
+}
+
+@media (min-width: @tablet-width) {}
+
+@media (min-width: @desktop-width) {}
