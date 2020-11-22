@@ -16,7 +16,7 @@
 
 .card-list__container {
     width: 100%;
-    .indents(@margin: 0 auto; @padding: 0);
+    .indents(@margin: 0 auto; @padding: 60px 0 0 0);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,11 +34,31 @@
     margin-right: 66px;
     margin-bottom: 18px;
     &--more-products {
+        position: relative;
         .font-size(@size: 16px; @weight: 400);
         .indents(@margin: 0 auto; @padding: 0);
         margin-bottom: 8px;
         color: @basic_black-2;
         text-transform: uppercase;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          top: -40px;
+          right: 88px;
+          background-color: @basic_grey-5;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          top: -40px;
+          right: 88px;
+          background-color: @basic_grey-5;
+          transform: rotate(90deg);
+        }
     }
 }
 
